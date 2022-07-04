@@ -6,7 +6,6 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(imges/background-6.webp);
   background-repeat: no-repeat;
-  background-size: cover;
   background-size: 100% 100%;
   
 }
@@ -22,6 +21,8 @@ body{
 nav{
   display: flex;
   justify-content: space-evenly;
+  background-color: black;
+  opacity: 50%;
   
 }
 
@@ -38,7 +39,7 @@ li {
 
 li a {
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   justify-content: space-evenly;
   padding: 14px 16px;
@@ -46,7 +47,7 @@ li a {
 }
 
 li a:hover {
-  background-color: white;
+  background-color: black;
   opacity: 50%;
 
 }
@@ -54,14 +55,12 @@ aside{
   height: 100px;
   flex: 1 0 250px;
   margin: 5px;
-  /* background-color: rosybrown; */
 }
 
 section{
   height: 800px;
   flex: 1 0 250px;
   margin: 5px;
-  /* background-color: gray; */
 }
 
 footer{
@@ -76,5 +75,7 @@ footer{
   justify-content: space-evenly;
   list-style-type: none;
   overflow: hidden;
+  background-color: black;
+  opacity: 50%;
 }
 

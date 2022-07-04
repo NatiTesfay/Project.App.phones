@@ -21,6 +21,8 @@
         nav{
             display: flex;
             justify-content: space-evenly;
+            background-color: black;
+            opacity: 50%;
             
         }
 
@@ -37,7 +39,7 @@
           
           li a {
             display: block;
-            color: black;
+            color: white;
             text-align: center;
             justify-content: space-evenly;
             padding: 14px 16px;
@@ -45,7 +47,7 @@
           }
           
           li a:hover {
-            background-color: white;
+            background-color: black;
             opacity: 50%;
 
           }
@@ -60,15 +62,7 @@
             flex: 1 0 250px;
             margin: 5px;
         }
-        #mainHolder{
-          width: 80vw;
-        }
-        .text1{
-            display: flex;
-            justify-content: space-evenly;
-        }
-       
-
+        
         footer{
             height: 50px;
             flex: 1 0 1200px;
@@ -81,6 +75,8 @@
             justify-content: space-evenly;
             list-style-type: none;
             overflow: hidden;
+            background-color: black;
+            opacity: 50%;
         }
 
        
