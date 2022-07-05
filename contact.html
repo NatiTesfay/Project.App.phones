@@ -11,7 +11,7 @@
     <div class="container">
         <nav>
           <ul>
-            <li><a href="#contact">Contact</a></li>
+            <li><a id="active" href="#contact">Form</a></li>
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="News.html">News</a></li>
             <li><a href="Cards.html">Cards</a></li>
@@ -23,12 +23,37 @@
   
       <section class="row">
         <div class="card"></div>
-      </section>
-      <footer>
 
+
+        <form action="" class="FormContainer">
+          <H1>Sing up</H1>
+          <div class="input-group">
+          <input type="text" placeholder="*User name*">
+          </div>
+          <br>
+          <div class="input-group">
+          <input type="email" placeholder="*Enter Email*">
+          </div>
+          <br>
+          <div class="input-group">
+          <input type="password" placeholder="*password*">
+          </div>
+          <br>
+          <div class="input-group">
+          <input type="password" placeholder="*Confirm-password*">
+          </div>
+          <br>
+           <button type="submit" onclick="SubmitBtn()" class="Btn">Submit</button>
+          </form>
+
+          
+      </section>
+
+
+
+      <footer>
         <li><a href="contact.html">Call us</a></li>
         <li><a href="About.html">Email</a></li>
-     
       </footer>
     </div>
 </body>

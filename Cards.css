@@ -1,12 +1,13 @@
 *{
   box-sizing: border-box;
+
 }
 body{
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(imges/background-6.webp);
-  background-repeat: no-repeat;
+  background-image: url(imges/background-1.webp); 
   background-size: 100% 100%;
+  height: 100%;
   
 }
 
@@ -17,11 +18,16 @@ body{
   display: flex;
   flex-wrap: wrap;
 }
+#active{
+  background-color: rgba(156, 41, 41, 0.808);
+  border-radius: 10px;
+}
+
 
 nav{
   display: flex;
   justify-content: space-evenly;
-  background-color: black;
+  /* background-color: black; */
   opacity: 50%;
   
 }
@@ -44,32 +50,52 @@ li a {
   justify-content: space-evenly;
   padding: 14px 16px;
   text-decoration: none;
+  margin: 10px;
+  
 }
 
 li a:hover {
   background-color: black;
   opacity: 50%;
+  border-radius: 10px;
 
 }
 aside{
-  height: 100px;
+  height: 25vh;
   flex: 1 0 250px;
   margin: 5px;
 }
+ 
+#selling-headline{
+  display: flex;
+  justify-content: center;
+  font-weight:bold;
+  font-size: xx-large;
+  color: white;
+}
+
+#second-headline{
+  display: flex;
+  justify-content: center;
+  color:white;
+  text-align: center;
+  font-weight:bold;
+  font-size: small;
+}
+
 
 section{
-  height: 800px;
+  /* height: 100vh; */
   flex: 1 0 250px;
   margin: 5px;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 footer{
   height: 50px;
   flex: 1 0 1200px;
-  display: block;
   text-align: center;
-  justify-content: space-evenly;
-  padding: 14px 16px;
   text-decoration: none;
   display: flex;
   justify-content: space-evenly;
@@ -77,5 +103,73 @@ footer{
   overflow: hidden;
   background-color: black;
   opacity: 50%;
+  position: sticky;
 }
+
+#holderHolder {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+div.card {
+  padding: 1rem;
+}
+.card>div{
+  padding: .5rem;
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 10px;
+  border: none;
+  padding-top: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  width: 25vw;
+  box-sizing: border-box;
+  box-shadow: 0 15px 30px black,
+  0 10px 10px;
+}
+
+.card>div:hover{
+box-shadow: 0 5px 10px black;
+transform: translate(0px -8px);
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(imges/background-6.webp);
+  
+}
+  #selling-headline{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight:bold;
+  }
+  
+  #second-headline{
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    font-weight:bold;
+  }
+  #holderHolder {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    display: grid;
+    width: -webkit-fill-available;
+  }
+}
+
+
+
 

@@ -7,7 +7,8 @@ body{
   background-image: url(imges/background-6.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 #container{
@@ -18,10 +19,15 @@ body{
   flex-wrap: wrap;
 }
 
+#active{
+  background-color: rgba(156, 41, 41, 0.808);
+  border-radius: 10px;
+}
+
 nav{
   display: flex;
   justify-content: space-evenly;
-  background-color: black;
+  /* background-color: black; */
   opacity: 50%;
   
 }
@@ -44,13 +50,15 @@ li a {
   justify-content: space-evenly;
   padding: 14px 16px;
   text-decoration: none;
+  margin: 10px; 
 }
 
 li a:hover {
   background-color: black;
   opacity: 50%;
-
+  border-radius: 10px;
 }
+
 aside{
   height: 100px;
   flex: 1 0 250px;
@@ -62,6 +70,47 @@ section{
   flex: 1 0 250px;
   margin: 5px;
 }
+
+
+.FormContainer{
+  background: #1717178c;
+  border-radius:15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  padding: 30px 50px;
+  box-shadow: 1px 1px 20px hsla(0, 82%, 24%, 0);
+  
+}
+.input-group{
+  width: 100%;
+  margin: 5px;
+}
+input{
+  width:100%;
+  border: 1px solid #444;
+  box-sizing: 5px;
+  background: #1d1e22;
+  color:white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Btn{
+ background-color: #5168f4;
+ color: white;
+ text-align: center;
+ font-size: 14px;
+ padding: 10px;
+ width: 100%;
+ border: none;
+ border-radius: 10px;
+ 
+}
+
+
 
 footer{
   height: 50px;
@@ -78,4 +127,15 @@ footer{
   background-color: black;
   opacity: 50%;
 }
+
+@media screen and (min-width: 600px) {
+  body {
+      background-position: center center;
+      background-attachment: fixed;
+      background-repeat: no-repeat; background-size: cover;
+      background-image: url(imges/background-1.webp);
+    
+  }
+}
+
 

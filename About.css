@@ -18,10 +18,15 @@ body{
   flex-wrap: wrap;
 }
 
+#active{
+  background-color: rgba(156, 41, 41, 0.808);
+  border-radius: 10px;
+}
+
 nav{
   display: flex;
   justify-content: space-evenly;
-  background-color: black;
+  /* background-color: black; */
   opacity: 50%;
   
 }
@@ -44,12 +49,13 @@ li a {
   justify-content: space-evenly;
   padding: 14px 16px;
   text-decoration: none;
+  margin: 10px;
 }
 
 li a:hover {
   background-color: black;
   opacity: 50%;
-
+  border-radius: 10px;
 }
 aside{
   height: 100px;
@@ -78,4 +84,15 @@ footer{
   background-color: black;
   opacity: 50%;
 }
+
+@media screen and (min-width: 600px) {
+  body {
+      background-position: center center;
+      background-attachment: fixed;
+      background-repeat: no-repeat; background-size: cover;
+      background-image: url(imges/background-1.webp);
+    
+  }
+}
+
 
