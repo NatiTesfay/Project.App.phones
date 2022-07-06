@@ -7,10 +7,9 @@ body{
   background-image: url(imges/background-6.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  
+  
 }
-
 #container{
   height: 100vh;
   width: 100vw;
@@ -50,15 +49,16 @@ li a {
   justify-content: space-evenly;
   padding: 14px 16px;
   text-decoration: none;
-  margin: 10px; 
+  margin: 10px;
+  
 }
 
 li a:hover {
   background-color: black;
   opacity: 50%;
   border-radius: 10px;
-}
 
+}
 aside{
   height: 100px;
   flex: 1 0 250px;

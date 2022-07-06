@@ -1,18 +1,7 @@
-let createObj = {
-    id:"",
-    price:"",
-    isAvilabale:"",
-    createAt:"",
-    color:"",
-    brand:"",
-    ram:"",
-    picture:""
-}
-
 
 
 const BASICAPI = "https://my-json-server.typicode.com/Jeck99/fake-server/devices";
-
+const USERAPI = "https://my-json-server.typicode.com/Jeck99/fake-server/users";
 
 async function getApi() {
     try{
@@ -64,6 +53,75 @@ objectsLoops();
 //      </div>
 //     `
 //     return text1
+// }
+
+// let createObj = {
+//     id:"",
+//     price:"",
+//     isAvilabale:"",
+//     createAt:"",
+//     color:"",
+//     brand:"",
+//     ram:"",
+//     picture:""
+// } 
+
+
+async function getUserApi() {
+    try{
+     return await fetch (USERAPI).
+        then(result=>result.json())
+    }
+    catch(error){
+        alert('error');
+    }
+    finally{}
+}
+function printUserApi() {
+    getUserApi().then((result)=>console.log(result)) 
+}
+printUserApi();
+
+async function objectsUsersLoops() {
+    let holderUser = document.getElementById("table");
+     await getUserApi()
+     holderUser.forEach(dev => {
+    let row = `<tr>
+    //                      <td>${dev[i].id}<td>
+    //                      <td>${dev[i].price}<td>
+    //                      <td>${dev[i].isAvailable}<td>
+    //                      <td>${dev[i].createAt}<td>
+    //                      <td>${dev[i].color}<td>
+    //                      <td>${dev[i].brand}<td>
+    //                      <td>${dev[i].ram}<td>
+    //                      <td>${dev[i].picture}<td>
+    //                     </tr>`
+              row.innerHTML+=row;
+       
+  });
+}
+objectsUsersLoops();
+
+
+
+
+
+// function BuildTable(data) {
+//     let myTable = document.getElementById('table-row')
+//     for (let i = 0; i < data.length; i++) {
+//         let row = 1`<tr>
+//                      <td>${res.id}<td>
+//                      <td>${data[i].price}<td>
+//                      <td>${data[i].isAvailable}<td>
+//                      <td>${data[i].createAt}<td>
+//                      <td>${data[i].color}<td>
+//                      <td>${data[i].brand}<td>
+//                      <td>${data[i].ram}<td>
+//                      <td>${data[i].picture}<td>
+//                     </tr>`
+//           row.innerHTML+=row
+        
+//     }    
 // }
 
 

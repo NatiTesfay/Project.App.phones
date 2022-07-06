@@ -50,12 +50,14 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   margin: 10px;
+  
 }
 
 li a:hover {
   background-color: black;
   opacity: 50%;
   border-radius: 10px;
+
 }
 aside{
   height: 100px;
