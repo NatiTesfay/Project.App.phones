@@ -5,10 +5,12 @@
   body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(imges/background-6.webp);
+    background-image: url(imges/background-1.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container{
@@ -65,32 +67,52 @@ aside{
   flex: 1 0 250px;
   margin: 5px;
 }
+#user-headline{
+ color: white;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: larger;
+ text-align: center;
+}
 
 section{
-  height: 800px;
-  flex: 1 0 250px;
-  margin: 5px;
+  /* height: 100% */
+  /* flex: 1 0 250px; */
+  /* margin: 5px; */
 }
 table {
-  /* border-collapse: collapse; */
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  border: solid 2px white;
+  font-family: sans-serif;
+  height: 70vh;
+  border-radius: 5px;
+
 }
 
-th, td {
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even){background-color: #f2f2f2}
-
-th {
-  background-color: rgba(51, 51, 138, 0.886);
+th{
+  background-color: black;
   color: white;
+  padding: 10px;
 }
 
+  th td {
+  padding: .8rem;
+  font-size: larger;
+  justify-content: space-evenly;
+  border: solid 2px white;
+  border-radius: 5px;
 
+}
+td{
+  border: solid 2px white;
+  border-radius: 5px;
+}
+
+#table_id {
+  background-color: rgba(51, 51, 138, 0.886);
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: solid 2px white;
+
+}
 
 footer{
   height: 50px;
@@ -108,13 +130,15 @@ footer{
   opacity: 50%;
 }
 
-@media screen and (min-width: 600px) {
+@media (max-width: 600px) {
   body {
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat; background-size: cover;
-    background-image: url(imges/background-1.webp);
-    
+    background-image: url(imges/background-6.webp);
+}
+table{
+  display:;
 }
 
 
