@@ -1,35 +1,24 @@
-*{
-  box-sizing: border-box;
-
-}
-body{
-  margin:0;
+* {
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(imges/background-1.webp);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  
 }
 
-#container{
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
-  display: flex;
-  flex-wrap: wrap;
-}
-#active{
-  background-color: rgba(156, 41, 41, 0.808);
-  border-radius: 10px;
-}
 
+.container {
+ width: 100%;
+ height: 100vh;
+ background-image:url(imges/HomePage-Imges/iphone.jpg);
+ background-position: center;
+ background-size: cover;
+ padding-left: 8%;
+ padding-right: 8%;
+ box-sizing: border-box;
+}
 
 nav{
   display: flex;
-  justify-content: space-evenly;
-  /* background-color: black; */
-  opacity: 50%;
-  
+  justify-content: space-evenly;  
 }
 
 ul {
@@ -40,6 +29,7 @@ ul {
 }
 
 li {
+  margin-top: 10px;
   float: left;
 }
 
@@ -47,43 +37,44 @@ li a {
   display: block;
   color: white;
   text-align: center;
+  font-size: 20px;
   justify-content: space-evenly;
   padding: 14px 16px;
   text-decoration: none;
-  margin: 10px;
-  
 }
 
 li a:hover {
-  background-color: black;
   opacity: 50%;
-  border-radius: 10px;
-
 }
-aside{
-  height: 25vh;
-  flex: 1 0 250px;
-  margin: 5px;
+
+.row{
+  display: flex;
+  height: 80%;
+  align-items: center;
+}
+
+col{
+  flex-basis: 50%;
+}
+h1{
+  color: white;
+  font-size: 120px;
+  align-items: center;
+  justify-content: center;
+}
+h3{
+  color: white;
+  font-size: 90px;
+  align-items: center;
+  justify-content: center;
+}
+p{
+  color: black;
+  font-size: 23px;
+  padding: 10x;
+  align-items: center;justify-content: space-around;
 }
  
-#selling-headline{
-  display: flex;
-  justify-content: center;
-  font-weight:bold;
-  font-size: xx-large;
-  color: white;
-}
-
-#second-headline{
-  display: flex;
-  justify-content: center;
-  color:white;
-  text-align: center;
-  font-weight:bold;
-  font-size: small;
-}
-
-
 section{
   /* height: 100vh; */
   flex: 1 0 250px;
@@ -91,19 +82,20 @@ section{
   flex-wrap: wrap;
   display: flex;
 }
-
 footer{
-  height: 50px;
+  height: 50vh;
   flex: 1 0 1200px;
+  display: block;
   text-align: center;
+  justify-content: space-evenly;
+  padding: 14px 16px;
   text-decoration: none;
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
   overflow: hidden;
   background-color: black;
-  opacity: 50%;
-  position: sticky;
+  opacity: 40%;
 }
 
 #holderHolder {
@@ -138,12 +130,6 @@ transform: translate(0px -8px);
 
 
 @media screen and (max-width: 600px) {
-  body {
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat; background-size: cover;
-    background-image: url(imges/background-6.webp);
-}
 
 
   #selling-headline{
@@ -170,6 +156,21 @@ transform: translate(0px -8px);
     display: grid;
     width: -webkit-fill-available;
   }
+  .card>div{
+    padding: .5rem;
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 10px;
+    border: none;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    width: 40vw;
+    box-sizing: border-box;
+    box-shadow: 0 15px 30px black,
+    0 10px 10px;
+  }
+  
 }
 
 

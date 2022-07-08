@@ -161,6 +161,7 @@ footer{
   display: flex;
   align-items: center;
 }
+
 li a {
   display: block;
   color: white;
@@ -191,8 +192,8 @@ footer{
   border-radius:15px;
   position: absolute;
   /* margin: auto; */
-  top: 60%;
-  left: 50%;
+  /* top: 60%; */
+  /* left: 50%; */
   transform: translate(-50%,-50%);
   width: 200px;
   padding: 30px 50px;
