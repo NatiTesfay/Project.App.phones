@@ -7,13 +7,11 @@
 
 .container {
  width: 100%;
- height: 100vh;
+ min-height: 100vh;
  background-image:url(imges/HomePage-Imges/iphone.jpg);
  background-position: center;
  background-size: cover;
- padding-left: 8%;
- padding-right: 8%;
- box-sizing: border-box;
+ 
 }
 
 nav{
@@ -58,54 +56,64 @@ col{
 }
 h1{
   color: #ffff;
-  font-size: 120px;
+  font-size: 80px;
   align-items: center;
   justify-content: center;
- 
+  text-align: center;
 }
+
 p{
   color: #fff;
-  font-size: 23px;
+  font-size: 20px;
   padding: 10x;
+  text-align: center;
   align-items: center;justify-content: space-around;
-
 }
 
 table {
-  border: solid 2px white;
-  font-family: sans-serif;
-  height: 70vh;
-  border-radius: 5px;
+font-family: sans-serif;
 
 }
 
 th{
-  background-color: black;
-  color: white;
-  padding: 10px;
-}
-
-  th td {
-  padding: .8rem;
-  font-size: larger;
-  justify-content: space-evenly;
-  border: solid 2px white;
-  border-radius: 5px;
+ color: #fff;
+ background-color: black;
+ border: 2px black solid;
 
 }
-td{
-  border: solid 2px white;
-  border-radius: 5px;
+
+th,td{
+  padding:.8rem;
+  font-size: 1.4rem;
 }
 
-#table_id {
+
+
+
+.deleteButton{
+  display: flex;
   justify-content: center;
-  background-image: linear-gradient(grey , white);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display: grid;
+  width: -webkit-fill-available;
+  margin: 50px;
+  
+}
+#btn{
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: coral;
   color: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border: solid 2px white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin:5px;
+  
 
 }
+
 
 footer{
   height: 50vh;
@@ -121,7 +129,9 @@ footer{
   overflow: hidden;
   background-color: black;
   opacity: 40%;
+
 }
+
 @media(max-width:700px){.navbar{
   height: 12%;
   display: flex;
@@ -136,6 +146,23 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+th{
+  display: none;
+}
+td{
+  display: block;
+}
+td:first-of-type{
+  background-color: #333;
+  color: #fff;
+  text-align:center ;
+}
+
+
+
+
+
+
 
 }
 

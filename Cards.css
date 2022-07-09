@@ -74,16 +74,33 @@ p{
   padding: 10x;
   align-items: center;justify-content: space-around;
 }
+
+.card>div{
+  padding: .5rem;
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 10px;
+  border: none;
+  padding-top: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  width: 20vw;
+  box-sizing: border-box;
+  box-shadow: 0 15px 30px black,
+  0 10px 10px;
+  background-image: url(imges/Phones-imges/iphone\ 11.webp);
+  background-position: center;
+  background-size: cover;
+}
  
 section{
-  /* height: 100vh; */
   flex: 1 0 250px;
   margin: 5px;
   flex-wrap: wrap;
   display: flex;
 }
 footer{
-  height: 50vh;
+  height: 50px;
   flex: 1 0 1200px;
   display: block;
   text-align: center;
@@ -95,8 +112,9 @@ footer{
   list-style-type: none;
   overflow: hidden;
   background-color: black;
-  opacity: 40%;
+  opacity: 50%;
 }
+
 
 #holderHolder {
   height: 100%;
@@ -108,20 +126,7 @@ footer{
 div.card {
   padding: 1rem;
 }
-.card>div{
-  padding: .5rem;
-  background-color: white;
-  border: solid black 2px;
-  border-radius: 10px;
-  border: none;
-  padding-top: 10px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-align: center;
-  width: 25vw;
-  box-sizing: border-box;
-  box-shadow: 0 15px 30px black,
-  0 10px 10px;
-}
+
 
 .card>div:hover{
 box-shadow: 0 5px 10px black;
@@ -156,21 +161,35 @@ transform: translate(0px -8px);
     display: grid;
     width: -webkit-fill-available;
   }
-  .card>div{
-    padding: .5rem;
-    background-color: white;
-    border: solid black 2px;
-    border-radius: 10px;
-    border: none;
-    padding-top: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    width: 40vw;
-    box-sizing: border-box;
-    box-shadow: 0 15px 30px black,
-    0 10px 10px;
+  h1{
+    color: white;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
   }
-  
+  h3{
+    color: white;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  .card>div{
+  padding: .5rem;
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 10px;
+  border: none;
+  padding-top: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  width: 50vw;
+  box-sizing: border-box;
+  box-shadow: 0 15px 30px black,
+  0 10px 10px;
+  background-image: url(imges/Phones-imges/iphone\ 11.webp);
+  background-position: center;
+  background-size: cover;
+}
 }
 
 

@@ -53,7 +53,7 @@ function objectsUsersLoops() {
     result.forEach((dev) => {
       table_id.innerHTML += 
       `<tr>
-      <th>
+     
      <td>${dev._id}<td>
      <td>${dev.age}<td>
      <td>${dev.name.first}<td>
@@ -62,9 +62,11 @@ function objectsUsersLoops() {
      <td>${dev.index}<td>
      <td>${dev.phone}<td>
     <td>${dev.picture}<td>
-    </th>
+   
      </tr>`;
     });
   });
 }
 objectsUsersLoops();
+
+
