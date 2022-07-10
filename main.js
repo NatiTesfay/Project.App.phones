@@ -19,7 +19,7 @@ async function objectsLoops() {
   let holder = document.getElementById("holderHolder");
   let array = await getApi();
   array.forEach((device) => {
-    holder.innerHTML += `<div id="${device.id}" class="card">
+ holder.innerHTML += `<div id="${device.id}" class="card">
         <div>
             <p>id:${device.id}</p>
             <p>price:${device.price}</p> 
@@ -29,11 +29,14 @@ async function objectsLoops() {
             <p>brand:${device.brand}</p>
             <p>ram:${device.ram}</p>
         </div>
+        <br>
+        <button>DELETE</button>
     </div>
     `;
   });
 }
 objectsLoops();
+
 
 
 async function getUserApi() {
@@ -68,5 +71,45 @@ function objectsUsersLoops() {
   });
 }
 objectsUsersLoops();
+
+function postObjects() {
+    
+}
+
+function objectPost() {
+
+    
+}
+
+
+ 
+ async function objPost(e) {
+    e.preventDefault();
+const data = {
+  movie: {
+    id:inputDate.value,
+    age:inputDate2.value,
+    name:inputDate3.value,
+    lastName:inputDate4.value,
+    email:inputDate5.value,
+    index:inputDate5.value,
+    phone:inputDate5.value,
+    picture:inputDate5.value,
+  }
+}
+  try {
+    await fetch(`${BASICAPI}addUser`, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      }
+    });
+  } catch (err) {}
+  finally{
+
+  }
+}
+
 
 

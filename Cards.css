@@ -3,6 +3,9 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+body{
+  background-color: rgba(128, 128, 128, 0.455);
+}
 
 
 .container {
@@ -69,7 +72,7 @@ h3{
   justify-content: center;
 }
 p{
-  color: black;
+  color: b;
   font-size: 23px;
   padding: 10x;
   align-items: center;justify-content: space-around;
@@ -94,6 +97,7 @@ p{
 }
  
 section{
+  /* height: 100vh; */
   flex: 1 0 250px;
   margin: 5px;
   flex-wrap: wrap;

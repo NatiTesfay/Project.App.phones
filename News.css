@@ -3,6 +3,10 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+body{
+  background-color: rgba(128, 128, 128, 0.455);
+}
+
 
 
 .container {
@@ -49,29 +53,33 @@ li a:hover {
   display: flex;
   height: 80%;
   align-items: center;
+  justify-content: center;
 }
 
 col{
-  flex-basis: 50%;
+  flex-basis: auto;
+  
 }
 h1{
-  color: #ffff;
-  font-size: 80px;
+  color: white;
+  margin: 50px;
+  font-size: 100px;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 p{
-  color: #fff;
-  font-size: 20px;
-  padding: 10x;
+  color: white;
+  font-size: 23px;
   text-align: center;
+  padding: 50x;
+  margin: 50px;
   align-items: center;justify-content: space-around;
 }
 
 table {
 font-family: sans-serif;
+border: solid 2px black;
 
 }
 
@@ -83,37 +91,10 @@ th{
 }
 
 th,td{
-  padding:.8rem;
-  font-size: 1.4rem;
+  /* padding:.4rem; */
+  font-size: 1.2rem;
+  border: solid 2px black;
 }
-
-
-
-
-.deleteButton{
-  display: flex;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  display: grid;
-  width: -webkit-fill-available;
-  margin: 50px;
-  
-}
-#btn{
-  padding: 10px 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: coral;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin:5px;
-  
-
-}
-
 
 footer{
   height: 50vh;
@@ -129,7 +110,6 @@ footer{
   overflow: hidden;
   background-color: black;
   opacity: 40%;
-
 }
 
 @media(max-width:700px){.navbar{
@@ -157,11 +137,6 @@ td:first-of-type{
   color: #fff;
   text-align:center ;
 }
-
-
-
-
-
 
 
 }
